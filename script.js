@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
           block: "start",
         });
       }
-      // Close mobile menu if open
+
       const navbarCollapse = document.querySelector(".navbar-collapse");
       if (navbarCollapse.classList.contains("show")) {
         const bsCollapse = new bootstrap.Collapse(navbarCollapse);
@@ -55,24 +55,16 @@ document.addEventListener("DOMContentLoaded", () => {
 // Photo Gallery Functionality
 const photos = [
   {
-    src: "flower.jpg",
-    alt: "遊戲主畫面",
+    src: "assets/images/WOL_1.png",
+    alt: "WOL_1",
   },
   {
-    src: "https://via.placeholder.com/600x338/00d4aa/ffffff?text=角色介紹",
-    alt: "角色介紹",
+    src: "assets/images/WOL_2.png",
+    alt: "WOL_2",
   },
   {
-    src: "https://via.placeholder.com/600x338/ff6b6b/ffffff?text=關卡場景",
-    alt: "關卡場景",
-  },
-  {
-    src: "https://via.placeholder.com/600x338/f093fb/ffffff?text=戰鬥畫面",
-    alt: "戰鬥畫面",
-  },
-  {
-    src: "https://via.placeholder.com/600x338/667eea/ffffff?text=技能系統",
-    alt: "技能系統",
+    src: "assets/images/WITCH_of_LEGEND_poster.png",
+    alt: "WITCH_of_LEGEND_poster",
   },
 ];
 
