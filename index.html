@@ -1,17 +1,354 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JustinWuPortfolio</title>
+    <title>Justin Wu - Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
-    <script src="script.js" defer></script>
   </head>
   <body>
-    <h1>My Portfolio</h1>
-    <hr />
-    <h2>My Projects</h2>
-    <a href="https://gnn.gamer.com.tw/detail.php?sn=262042">Witch Of Legend</a>
-    <a href="contact.html">Contact Me</a>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+      <div class="floating-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+      </div>
+    </div>
+
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">Justin Wu 吳岳勳</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">首頁</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#education">學歷</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#experience">工作經歷</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">技能</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">專案</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">聯繫</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Justin Wu 吳岳勳</h1>
+          <p class="lead">資訊工程學系畢業生 | 熱衷於遊戲開發與後端技術</p>
+          <a href="#projects" class="btn btn-hero btn-lg">查看我的作品</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">ABOUT ME</h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="card-modern fade-in">
+              <p class="lead">
+                我是吳岳勳，22 歲，畢業於國立臺灣科技大學資訊工程學系。
+                熟悉C++、Python、SQL，具備 Git
+                與Linux操作經驗，以及良好的英文能力（TOEIC
+                935）。目前專注於學習前端與全端開發，希望結合程式基礎與創意，在技術領域持續成長。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <div class="container">
+        <h2 class="section-title">學歷</h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="card-modern fade-in">
+              <h4 class="mb-3">
+                <i class="fas fa-graduation-cap text-primary me-3"></i>
+                國立臺灣科技大學 - 資訊工程學系
+              </h4>
+              <p class="text-secondary mb-2">學士學位 | 2021/9 - 2025/6</p>
+              <p>專注於軟體工程、資料結構與演算法、遊戲開發等領域的學習</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section-title">工作經歷</h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="card-modern fade-in">
+              <h4 class="mb-3">
+                <i class="fas fa-gamepad text-primary me-3"></i>
+                遊戲後端實習
+              </h4>
+              <p class="text-secondary mb-3">2025/3 - 2025/6</p>
+              <p>
+                參與遊戲後端開發，以C++為主要語言，參與完整的開發流程，學習基礎後端知識。在團隊協作中深入了解遊戲伺服器架構與資料庫設計。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">技能</h2>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="skill-item fade-in">
+              <i class="fab fa-cuttlefish"></i>
+              <h5>C++</h5>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="skill-item fade-in">
+              <i class="fab fa-python"></i>
+              <h5>Python</h5>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="skill-item fade-in">
+              <i class="fas fa-database"></i>
+              <h5>SQL</h5>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="skill-item fade-in">
+              <i class="fab fa-git-alt"></i>
+              <h5>Git</h5>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="skill-item fade-in">
+              <i class="fab fa-linux"></i>
+              <h5>Linux</h5>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="skill-item fade-in">
+              <i class="fab fa-unity"></i>
+              <h5>Unity</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">專案</h2>
+        <div class="project-showcase">
+          <!-- Project Info -->
+          <div class="row mb-5">
+            <div class="col-12">
+              <div class="project-card fade-in">
+                <div class="project-info">
+                  <h3 class="project-title">Witch of Legend</h3>
+                  <p class="text-secondary mb-3">
+                    一款基於Unity的2D橫向卷軸遊戲，負責關卡流程設計與怪物行為設計。參加112臺灣大專院校創意遊戲設計競賽，獲得酷碼未來之星獎（2023/9
+                    - 2024/1）。
+                  </p>
+                  <div class="d-flex flex-wrap gap-2 mb-3">
+                    <span class="badge bg-primary">Unity</span>
+                    <span class="badge bg-secondary">C#</span>
+                    <span class="badge bg-success">Game Design</span>
+                    <span class="badge bg-info">2D Graphics</span>
+                    <!-- 新增標籤 -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Media Gallery -->
+          <div class="row">
+            <!-- Video Section -->
+            <div class="col-lg-6 mb-4">
+              <h4 class="media-title">
+                <!-- 新增標題 -->
+                <i class="fas fa-play-circle me-2"></i>遊戲預告片
+              </h4>
+              <div class="video-wrapper fade-in">
+                <div class="ratio ratio-16x9">
+                  <video controls>
+                    <source
+                      src="assets/videos/Trailer_ver4.mp4"
+                      type="video/mp4"
+                    />
+                    您的瀏覽器不支援影片標籤。
+                  </video>
+                </div>
+              </div>
+            </div>
+
+            <!-- 新增：Photo Gallery Section -->
+            <div class="col-lg-6 mb-4">
+              <h4 class="media-title">
+                <i class="fas fa-images me-2"></i>遊戲相關畫面
+              </h4>
+              <div class="photo-gallery fade-in">
+                <!-- Main Display Photo -->
+                <div class="main-photo-container mb-3">
+                  <img
+                    src="flower.jpg"
+                    alt="遊戲主畫面"
+                    class="main-photo"
+                    id="mainPhoto"
+                  />
+                  <div class="photo-overlay">
+                    <button class="btn-expand" onclick="openLightbox()">
+                      <i class="fas fa-expand"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Thumbnail Gallery -->
+                <div class="thumbnail-gallery">
+                  <div class="thumbnail-scroll">
+                    <div
+                      class="thumbnail active"
+                      onclick="changeMainPhoto(this)"
+                    >
+                      <img src="flower.jpg" alt="主畫面" />
+                    </div>
+                    <div class="thumbnail" onclick="changeMainPhoto(this)">
+                      <img
+                        src="https://via.placeholder.com/150x84/00d4aa/ffffff?text=角色介紹"
+                        alt="角色介紹"
+                      />
+                    </div>
+                    <div class="thumbnail" onclick="changeMainPhoto(this)">
+                      <img
+                        src="https://via.placeholder.com/150x84/ff6b6b/ffffff?text=關卡場景"
+                        alt="關卡場景"
+                      />
+                    </div>
+                    <div class="thumbnail" onclick="changeMainPhoto(this)">
+                      <img
+                        src="https://via.placeholder.com/150x84/f093fb/ffffff?text=戰鬥畫面"
+                        alt="戰鬥畫面"
+                      />
+                    </div>
+                    <div class="thumbnail" onclick="changeMainPhoto(this)">
+                      <img
+                        src="https://via.placeholder.com/150x84/667eea/ffffff?text=技能系統"
+                        alt="技能系統"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 新增：Lightbox Modal -->
+      <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+          <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+          <img id="lightboxImage" src="" alt="" />
+          <div class="lightbox-controls">
+            <button class="lightbox-btn" onclick="previousPhoto()">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="lightbox-btn" onclick="nextPhoto()">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">聯繫我</h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <div class="contact-item fade-in">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <strong>電子郵件</strong><br />
+                justin910918@gmail.com
+              </div>
+            </div>
+            <div class="contact-item fade-in">
+              <i class="fas fa-phone"></i>
+              <div>
+                <strong>電話</strong><br />
+                0985-631-340
+              </div>
+            </div>
+            <!-- <div class="contact-item fade-in">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <strong>地址</strong><br />
+                高雄市湖內區福生三***
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-center">
+      <div class="container">
+        <p>Justin Wu.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
